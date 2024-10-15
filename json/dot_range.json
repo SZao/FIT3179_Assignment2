@@ -1,0 +1,104 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A ranged dot plot that uses 'layer' to convey changing life expectancy for the five most populous countries (between 1955 and 2000).",
+    "width":350,
+    "height":350,
+    "data": {"url": "https://raw.githubusercontent.com/SZao/FIT3179/refs/heads/master/data/Monthly%20domestic%20overnight%20travel.csv"},
+    "params": [
+        {
+            "name": "State_selection",
+            "value": "New South Wales"
+            
+        }
+    ],
+    "transform": [
+        {
+            "filter": {
+                "field": "Month",
+                "oneOf": [
+                    "January", "February", "March", "April", "May",
+                    "June", "July", "August", "September", "October",
+                    "November", "December"
+                ]
+            }
+        },
+        {
+            "filter": {
+                "field": "Year",
+                "oneOf": [2022, 2023]
+            }
+        },
+        {
+            "filter": "datum.State == State_selection"
+        }
+        
+    ],
+    "encoding": {
+        "x": {
+            "field": "Intrastate",
+            "type": "quantitative",
+            "title": "Number of Tourist"
+        },
+        "y": {
+            "field": "Month",
+            "type": "ordinal",
+            "title": "Month",
+            "axis": {
+                "offset": 5,
+                "ticks": false,
+                "minExtent": 70,
+                "domain": false
+            },
+            "sort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] 
+
+        }
+    },
+    "layer": [
+        {
+            "mark": "line",
+            "encoding": {
+                "detail": {
+                    "field": "Month",
+                    "type": "ordinal"
+                },
+                "color": {
+                    "value": "#db646f"
+                },
+                "tooltip": [
+                    {"field": "Month", "title": "Month"},
+                    {"field": "Year", "title": "Year"},
+                    {"field": "Intrastate", "title": "Number of Tourist"}
+                ]
+            }
+        },
+        {
+            "mark": {
+                "type": "point",
+                "filled": true
+            },
+            "encoding": {
+                "color": {
+                    "field": "Year",
+                    "type": "ordinal",
+                    "scale": {
+                        "domain": [2022, 2023],
+                        "range": ["#e6959c", "#911a24"]
+                    },
+                    "title": "Year"
+                },
+                "size": {
+                    "value": 100
+                },
+                "opacity": {
+                    "value": 1
+                },
+                "tooltip": [
+                    {"field": "Month", "title": "Month"},
+                    {"field": "Year", "title": "Year"},
+                    {"field": "State", "title": "State"},
+                    {"field": "Intrastate", "title": "Number of Tourist","format":",.0f"}
+                ]
+            }
+        }
+    ]
+}

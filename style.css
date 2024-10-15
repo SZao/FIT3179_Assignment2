@@ -1,0 +1,233 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #e0f7fa; /* Light blue background */
+    margin: 0; /* Remove default body margin */
+    padding: 10; /* Remove default body padding */
+}
+
+h1 {
+    text-align: center; /* Center the main title */
+    color: white; /* Dark teal color for the title */
+    margin-bottom: 20px; /* Space below the title */
+    font-size: 110px ;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: url(../image/background1.jpg);
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center; /* Center the image */
+    margin: 0;
+}
+
+.chart {
+   
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .chart, .text {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+#content {
+    display: flex;
+    align-items: flex-start; /* Align the text and images at the top */
+    justify-content: space-between; /* Space the content between the two images */
+    gap: 20px; /* Adds a gap between the elements */
+  }
+  
+  #image-left {
+    width: 350px; /* Adjust the left image size */
+    height: auto; /* Keep the image aspect ratio */
+    padding-left: 30px;
+  }
+  
+  #desc {
+    font-family: 'Times New Roman', serif;
+    font-size: 18px;
+    text-align: justify;
+    flex-grow: 1; /* Allow text to take the available space */
+    padding-top: 20px;
+  }
+  
+  #image-right {
+    width: 350px; /* Adjust the right image size */
+    height: auto; /* Keep the image aspect ratio */
+    padding-right: 50px;
+
+  }
+
+  .container_map {
+    display: flex; /* Flexbox to align the items horizontally */
+    justify-content: space-between; /* Space between the maps */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    gap: 20px; /* Add a gap between the two sections */
+
+}
+
+/* Text styling inside the map */
+.text {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* The chart itself (map or pie) */
+.map_chart {
+  width: 100%;
+  height: 40px; /* Adjust the height of the chart */
+
+}
+
+/* Hover effect on the map/chart */
+.map_chart:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: transform 0.3s ease;
+}
+
+/* Header and paragraph styling */
+.text h2 {
+  font-family: Arial, sans-serif;
+  font-size: 26px;
+  color: black;
+}
+
+.text p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 17px;
+  color: black;
+  text-align: left;
+}
+
+.container_combine {
+  display: flex;
+  justify-content: space-between; /* Space between the maps */
+  gap: 30px;
+  margin: 20px;
+  background-color: #FBFAF0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.left-side {
+  flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+/* Hover effect on the map/chart */
+.chart_combine:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: transform 0.3s ease;
+}
+
+#flag-container {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.flags {
+  display: flex;
+  justify-content: left;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.state-flag {
+  width: 60px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.state-flag:hover {
+  transform: scale(1.1);
+}
+
+.container3 {
+  display: flex;
+  justify-content: space-between; /* Space between the maps */
+  gap: 30px;
+  margin: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+
+
+}
+
+.concate_chart {
+  width: 100%;
+  height: 400px; /* Adjust height as necessary for the charts */
+}
+
+
+
+.container4 {
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+  justify-content: space-between; /* Add space between each pair */
+  gap: 10px; /* Add space between pairs */
+
+  display: flex;
+  background-color: #FBFAF0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.pair {
+  display: flex;
+  flex: 1 1 45%; /* Make each pair take 45% of the container width */
+  justify-content: space-between;
+}
+
+.bubble-container {
+  flex: 1;
+  margin-left: 30px; /* Space between chart and text */
+}
+
+.text-container {
+  flex: 1;
+  max-width: 500px; /* Limit the width of the text container */
+  margin-right: 60px; /* Space between chart and text */
+
+}
+
+.text {
+  padding: 10px;
+}
+
+.bubble_chart {
+  width: 100%;
+  height: 400px; /* You can adjust this based on your chart size */
+}
+
+/* Hover effect on the map/chart */
+.bubble_chart:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+  transition: transform 0.3s ease;
+}
+
+
+.author-info {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+.author-info p {
+  margin: 5px 0;
+
+}
+

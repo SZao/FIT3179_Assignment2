@@ -1,0 +1,97 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {"view": {"stroke": ""}},
+  "background": "transparent",
+  "vconcat": [
+    {
+      "width": 600,
+      "height": 200,
+      "data": {
+        "url": "https://raw.githubusercontent.com/SZao/FIT3179/refs/heads/master/data/top%20five%20airports.csv",
+        "format": {"type": "csv"}
+      },
+      "transform": [{"filter": "datum.Year == Year_filter"}],
+      "mark": "area",
+      "encoding": {
+        "x": {
+          "field": "Month",
+          "type": "ordinal",
+          "title": "Month",
+          "sort": [
+            "January", "February", "March", "April", "May", "June", 
+            "July", "August", "September", "October", "November", "December"
+          ]
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "Number",
+          "title": "Number of Flights"
+        },
+        "color": {
+          "field": "State",
+          "scale": {
+            "range": ["#FDC094", "#5E72EB", "#120C6E", "#FF9190", "#0B0742"]
+          }
+        },
+        "tooltip": [
+          {"field": "Month", "type": "ordinal", "title": "Month"},
+          {"field": "Number", "type": "quantitative", "title": "Number of Flights"},
+          {"field": "State", "type": "nominal", "title": "State"}
+        ]
+      }
+    },
+    {
+      "width": 600,
+      "height": 200,
+      "data": {
+        "url": "https://raw.githubusercontent.com/SZao/FIT3179/refs/heads/master/data/source%20countries%20to%20australia.csv",
+        "format": {"type": "csv"}
+      },
+      "transform": [
+        {
+          "calculate": "datum['Country of Residence'] == 'New Zealand' ? '🇳🇿' : datum['Country of Residence'] == 'China' ? '🇨🇳' : datum['Country of Residence'] == 'USA' ? '🇺🇸' : datum['Country of Residence'] == 'Japan' ? '🇯🇵' : datum['Country of Residence'] == 'UK' ? '🇬🇧' : datum['Country of Residence'] == 'Korea, South' ? '🇰🇷' : datum['Country of Residence'] == 'Singapore' ? '🇸🇬' : datum['Country of Residence'] == 'India' ? '🇮🇳' : datum['Country of Residence'] == 'Hong Kong' ? '🇭🇰' : datum['Country of Residence'] == 'Indonesia' ? '🇮🇩' : ''",
+          "as": "flagEmoji"
+        },
+        {"fold": ["2021", "2022", "2023", "2024"], "as": ["Year", "Visitors"]},
+        {"filter": "datum.Year == Year_filter"}
+      ],
+      "mark": {
+        "type": "text",
+        "fontSize": 40,
+        "align": "center",
+        "baseline": "middle"
+      },
+      "encoding": {
+        "x": {
+          "field": "Country of Residence",
+          "type": "nominal",
+          "axis": {"labelAngle": 45},
+          "title": "Country"
+        },
+        "y": {
+          "field": "Visitors",
+          "type": "quantitative",
+          "title": "Number of Visitors"
+        },
+        "text": {"field": "flagEmoji", "type": "nominal"},
+        "tooltip": [
+          {"field": "Country of Residence", "type": "nominal", "title": "Country"},
+          {"field": "Visitors", "type": "quantitative", "title": "Visitors"},
+          {"field": "Year", "type": "nominal", "title": "Year"}
+        ]
+      }
+    }
+  ],
+  "params": [
+    {
+      "name": "Year_filter",
+      "value": "2023",
+      "bind": {
+        "input": "select",
+        "options": ["2021", "2022", "2023", "2024"],
+        "labels": ["2021", "2022", "2023", "2024"],
+        "name": "Year: "
+      }
+    }
+  ]
+}

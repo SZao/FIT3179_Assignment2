@@ -1,0 +1,47 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "width": 500,
+    "height": 400,
+    "data": {
+      "url": "https://raw.githubusercontent.com/SZao/FIT3179/refs/heads/main/Assignment2/json/australia_state_map.json",
+      "format": {"type": "topojson", "feature": "STE_2016_AUST"}
+    },
+    "projection": {"type": "mercator"},
+    "transform": [
+      {
+        "lookup": "properties.STE_NAME16",
+        "from": {
+          "data": {
+            "url": "https://raw.githubusercontent.com/SZao/FIT3179/refs/heads/master/data/Domestic_travel_state.csv"
+          },
+          "key": "Region",
+          "fields": ["Number of resident returns", "Region"]
+        }
+      }
+    ],
+    "mark": {
+      "type": "geoshape",
+      "stroke": "white"
+    },
+    "encoding": {
+      "color": {
+        "field": "Number of resident returns",
+        "type": "quantitative",
+        "title": "Number of visits",
+        "scale": {"scheme": "greens", "reverse": false}  
+      },
+      "tooltip": [
+        {
+          "field": "Region",
+          "type": "nominal",
+          "title": "State"
+        },
+        {
+          "field": "Number of resident returns",
+          "type": "quantitative",
+          "title": "Number of visits"
+        }
+      ]
+    }
+  }
+  

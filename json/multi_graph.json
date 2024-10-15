@@ -1,0 +1,61 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "data": {
+    "values": [
+      {"Year": "2015-16", "Tourism ($b)": 56.44},
+      {"Year": "2016-17", "Tourism ($b)": 59.387},
+      {"Year": "2017-18", "Tourism ($b)": 62.118},
+      {"Year": "2018-19", "Tourism ($b)": 63.353},
+      {"Year": "2019-20", "Tourism ($b)": 49.899},
+      {"Year": "2020-21", "Tourism ($b)": 28.776},
+      {"Year": "2021-22", "Tourism ($b)": 35.644},
+      {"Year": "2022-23", "Tourism ($b)": 57.079}
+    ]
+  },
+  "vconcat": [
+    {
+      "width": 480,
+      "height": 240,
+      "mark": "area",
+      "encoding": {
+        "x": {
+          "field": "Year",
+          "type": "nominal",
+          "scale": {"domain": {"param": "brush"}},
+          "axis": {"title": ""}
+        },
+        "y": {
+          "field": "Tourism ($b)",
+          "type": "quantitative",
+          "title": "Tourism GDP Value ($b)"
+        },
+        "color": {"value": "#57291F"},
+        "tooltip": [
+          {"field": "Year", "type": "nominal", "title": "Year"},
+          {
+            "field": "Tourism ($b)",
+            "type": "quantitative",
+            "title": "Tourism GDP Value ($b)"
+          }
+        ]
+      }
+    },
+    {
+      "width": 480,
+      "height": 60,
+      "mark": "line",
+      "params": [
+        {"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}
+      ],
+      "encoding": {
+        "x": {"field": "Year", "type": "nominal"},
+        "y": {
+          "field": "Tourism ($b)",
+          "type": "quantitative",
+          "axis": {"tickCount": 3, "grid": false}
+        }
+      }
+    }
+  ],
+  "config": {}
+}

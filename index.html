@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Import Vega & Vega-Lite -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" type="text/css" href="style.css" media="all">
+
+    <title>Tourism in Australia</title>
+</head>
+
+<body>
+
+    <div>
+        <h1 class="title">Tourism in Australia</h1>
+
+    </div>
+
+    <div id="content">
+        <img src="../image/flag.png" alt="Tourism Image" id="image-left">
+        <p id="desc">
+            <span>Tourism plays a crucial role in Australia's economy, culture,</span><br>
+            <span>and regional development. This topic covers the dynamics of both international</span><br>
+            <span>and domestic travel, including the number of visitors, their spending patterns,</span><br>
+            <span>and the distribution of tourist activities across various states.</span><br>
+            <span>It also highlights the significance of major airports</span><br>
+            <span>and their role in domestic cargo transportation.</span><br>
+            <span>Additionally, it looks at the broader impacts of tourism,</span><br>
+            <span>such as its influence on local economies.</span><br>
+            <span>Tourism fosters cultural exchange and enhances global understanding.</span><br>
+            <span>It supports employment in multiple sectors and drives regional growth.</span><br>
+            <span>Major tourism events bring international attention to Australia's attractions.</span><br>
+            <span>Tourist spending contributes significantly to Australia's GDP and economy.</span><br>
+            <span>The tourism sector faces challenges like environmental sustainability concerns.</span><br>
+            <span>Effective tourism management can mitigate negative environmental impacts.</span>
+        </p>
+        <img src="../image/desc.png" alt="Tourism Image" id="image-right">
+    </div>
+
+    <div class="container_map">
+        <!-- First Map (Number of Visitors by State) -->
+        <div class="map">
+            <div class="text">
+                <h2>Number of Visit in each State by International Tourist in June 2023</h2>
+                <p><strong>Choropleth Map</strong> provides insights into the <strong>Number of International
+                        Visitors<br>
+                        to each State</strong>.It visually compares tourism trends across Australia, <br>
+                    helping identify popular destinations and regions with higher or lower <br>
+                    visitation amount.
+                    This map is useful for understanding patterns in international <br>tourism
+                    and can inform decisions on where to focus marketing<br> or tourism development efforts.</p>
+            </div>
+            <div id="travel_state" class="map_chart"></div>
+        </div>
+
+        <!-- Second Map ) -->
+        <div class="map">
+            <div class="text">
+                <h2>Number of Visit in each State by Domestic Tourist in 2023</h2>
+                <p><strong>Choropleth Map visualizes the number of domestic visitors</strong> to each state <br>
+                    in Australia for the year 2023. <br>
+                    This map allows for an easy comparison of tourism activity <br>between different regions,
+                    helping to identify popular domestic travel destinations <br>and areas with lower visitation.
+                    It serves as a valuable tool <br>for understanding trends in domestic tourism and can guide
+                    <br>future travel
+                    promotions
+                    and infrastructure planning.</p>
+            </div>
+            <div id="domestic_map" class="map_chart"></div>
+        </div>
+    </div>
+
+   
+    <div class="container_combine">
+        <div class="left-side">
+            <div class="text">
+                <h2>Top 5 Cargo Airports in Australia (2021-2024)</h2>
+                <p>This <strong>area chart</strong> highlights the top 5 cargo airports in Australia <br>
+                    from 2021 to 2024, illustrating the <strong>volume of cargo processed by <br>
+                        each airport</strong>. It provides valuable insights into the performance of Australia’s<br>
+                    key international trade hubs, helping to track the growth and fluctuations <br>
+                    in cargo traffic over time. By analyzing these trends, businesses <br>
+                    and policymakers can better understand the role of these airports <br>
+                    in supporting Australia’s economy, facilitating international trade, and ensuring efficient <br>
+                    logistics networks. </p>
+            </div>
+
+            <div class="text">
+                <h2>Top 10 Source Countries to Australia (2021-2024)</h2>
+                <p>This chart shows the <strong>source countries for tourists visiting <br>
+                        Australia from 2021 to 2024</strong>. Using flag emojis, it visually represents <br>
+                    the country of origin, making it easy to identify which <strong>nations <br>
+                        are contributing the most to Australia’s inbound tourism</strong>. The chart <br>
+                    provides insights into international visitation trends, helping businesses and policymakers<br>
+                    target marketing efforts and tourism initiatives. By tracking changes over time,<br>
+                    it also reflects the recovery of the tourism industry post-pandemic<br>
+                    and highlights evolving travel preferences.</p>
+
+            </div>
+        </div>
+
+        <div id="combine_chart" class="chart_combine"></div>
+    </div>
+
+    <div class="container3">
+        <div class="chart-container">
+            <div class="text" >
+                <h2>Intrastate Tourist Visits (2023 vs 2022)</h2>
+                <p>Dot range chart provides a <strong>comparison of intrastate tourist visit patterns<br> 
+                    between 2022 and 2023</strong>, offering insights into how travel behavior changed<br>
+                     across different months. By highlighting seasonal trends, it reveals the months <br>
+                     with the highest and lowest tourist activity, making it easy <br>
+                     to identify peak travel periods and off-season lulls. <br>
+                     This information can help tourism stakeholders understand travel dynamics and <br>
+                     better plan for future demand, resource allocation, and promotional efforts <br>
+                     based on yearly and seasonal variations.
+            </div>
+            <div class="concate">
+                <div id="flag-container">
+                    <h3>Filter:</h3>
+                    <div class="flags">
+                        <img src="../image/nsw.png" alt="New South Wales" class="state-flag" data-state="New South Wales" title="New South Wales">
+                        <img src="../image/vic.png" alt="Victoria" class="state-flag" data-state="Victoria" title="Victoria">
+                        <img src="../image/queen.png" alt="Queensland" class="state-flag" data-state="Queensland" title="Queensland">
+                        <img src="../image/south_aus.png" alt="South Australia" class="state-flag" data-state="South Australia" title="South Australia">
+                        <img src="../image/western_aus.png" alt="Western Australia" class="state-flag" data-state="Western Australia" title="Western Australia">
+                        <img src="../image/tas.png" alt="Tasmania" class="state-flag" data-state="Tasmania" title="Tasmania">
+                        <img src="../image/nt.svg" alt="Northern Territory" class="state-flag" data-state="Northern Territory" title="Northern Territory">
+                        <img src="../image/capital.svg" alt="Australian Capital Territory" class="state-flag" data-state="Australian Capital Territory" title="Australian Capital Territory">
+                    </div>
+                </div>
+                <div id="dot_range" class="concate_chart"></div>
+            </div>
+        </div>
+    
+        <div class="chart-container">
+            <div class="text" style="margin-left: 80px;">
+                <h2>Interstate Tourist Visits~Regional Heatmap</h2>
+                <p>This heatmap visualizes <strong>interstate tourist visits across Australia</strong>,<br>
+                     emphasizing regions with the highest and lowest levels of tourist activity. <br>
+                     By showcasing the variation in visitation across different states, <br>
+                     it provides a clearer spatial understanding of how tourism is distributed. <br>
+                     The heatmap allows for quick identification of popular tourist destinations<br>
+                     and areas with less footfall, helping businesses, policymakers, and tourism developers<br>
+                    better understand regional travel patterns and target areas with potential <br>
+                    for growth or improvement in tourism services.</p>
+            </div>
+            <div id="heat_map" class="concate_chart" style="margin-top: 40px;"></div>
+        </div>
+    </div>
+
+    
+    <div class="container4">
+        <!-- First pair: Graph + Text -->
+        <div class="pair">
+            <div class="bubble-container">
+                <div id="spending" class="bubble_chart"></div>
+            </div>
+            <div class="text-container">
+                <div class="text">
+                    <h2>International Travel Insights: Spending Trends by Purpose</h2>
+                    <p>This chart offers a detailed visualization of <strong>international travel spending trends,<br>
+                         focusing on different tourist purposes in Australia</strong>. <br>
+                         The data highlights how tourists allocate their spending based on their<br>
+                        travel purpose, such as holidays, business, education, visiting friends and relatives,<br>
+                         and more. It provides valuable insights into the most popular tourist <br>
+                         activities in Australia, helping us understand which categories receive <br>
+                         the highest spending and how they compare across different years.<br>
+                          The chart helps to explore the financial contributions of tourists to <br>
+                          the Australian economy, offering a clear view of spending patterns<br>
+                           and their potential impact on various sectors within the tourism industry.</p>
+
+                </div>
+            </div>
+        </div>
+    
+        
+        <!-- Second pair: Graph + Text -->
+        <div class="pair">
+            <div class="bubble-container">
+                <div id="bubble_chart" class="bubble_chart"></div>
+            </div>
+            <div class="text-container">
+                <div class="text">
+                    <h2>Accommodation Types in Australia: Distribution and Popularity</h2>
+                    <p>This bubble chart visualizes the<strong> distribution of various types of<br>
+                         accommodation in Australia</strong>, with each bubble representing a different <br>
+                         accommodation type. The size of the bubble corresponds to the<br>
+                        quantity of each type, providing a visual representation of how common <br>
+                        each accommodation is. The chart highlights the most popular accommodation<br>
+                        options, such as hotels, rented houses, and backpacker hostels,<br>
+                        while also showcasing less common alternatives like camping and private accommodations.<br>
+                        It also offers insights into the preferences of tourists and locals<br>
+                         alike when it comes to lodging in Australia.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container_map">
+        <!-- First chart -->
+        <div class="map">
+            <div class="text">
+                <h2>Comparison of Business Counts by Industry in 2019 and 2021</h2>
+                <p>Diverging bar chartillustrates the <strong>change in the number of businesses <br>
+                    across various industries between 2019 and 2021</strong>. The chart highlights <br>
+                    how industries such as retail trade, cafes, restaurants, and <br>
+                    accommodation have evolved in terms of business count. These industries<br>
+                    are closely tied to tourism, which plays a significant <br>
+                    role in driving economic activity in Australia. The growth <br>
+                    in business numbers, especially in cafes, restaurants, and accommodation <br>
+                    sectors, reflects the positive impact of tourism, as both <br>
+                    domestic and international visitors fuel demand. By comparing data <br>
+                    for these two years, the chart provides insights into <br>
+                    which sectors experienced growth or reduction, offering a snapshot <br>
+                    of the changing business landscape during this time..</p>
+            </div>
+            <div id="diverging_bar" class="map_chart"></div>
+        </div>
+
+        <!-- Second chart ) -->
+        <div class="map">
+            <div class="text">
+                <h2>Tourism GDP Growth in Australia (2015-2023)</h2>
+                <p>This chart illustrates <strong>the annual growth of Australia's tourism GDP 
+                    from 2015-16 to 2022-23</strong>. Tourism is a significant contributor to <br>
+                    the country's economy, and this chart highlights its fluctuating impact <br>
+                    over the years. By visualizing the revenue from tourism, <br>
+                    the chart emphasizes how the sector plays a crucial role <br>
+                    in supporting economic stability and growth. Interactive features allow users to <br>
+                    examine the trends and better understand tourism's influence on Australia's 
+                    <br>overall GDP.<br>
+                <strong>The line chart below is used to interactively filter <br>
+                and highlight specific sections of the area chart.</strong></p>
+            </div>
+            <div id="multi_graph" class="map_chart"></div>
+        </div>
+    </div>
+
+    <div class="author-info"></div>
+        <p><strong>Author:</strong> Swee Zao Yong</p>
+        <p><strong>Data Source:</strong> Tourism Research Australia, Australian Bureau of Statistics (ABS), and data.gov.au</p>
+    </div>
+    
+    
+
+
+    <script type="text/javascript">
+        // Specifying the paths to the Vega-Lite JSON specifications
+        var spendingSpec = "json/Spending.json";
+        var dotRangeSpec = "json/dot_range.json";
+        var heatMapSpec = "json/heat_map.json";
+        var travelStateSpec = "json/travel_state.json";
+        var domesticMap = "json/domestic_map.json";
+        var combineChart = "json/combine_chart.json";
+        var bubbleChart = "json/bubble_chart.json";
+        var divergingBar = "json/diverging_bar.json";
+        var multiGraph = "json/multi_graph.json";
+        // Embedding each chart
+        vegaEmbed('#spending', spendingSpec).catch(console.error);
+        vegaEmbed('#dot_range', dotRangeSpec).catch(console.error);
+        vegaEmbed('#heat_map', heatMapSpec).catch(console.error);
+        vegaEmbed('#travel_state', travelStateSpec).catch(console.error);
+        vegaEmbed('#domestic_map', domesticMap).catch(console.error);
+        vegaEmbed('#combine_chart', combineChart).catch(console.error);
+        // Function to handle flag click and update Vega-Lite selection
+        document.querySelectorAll('.state-flag').forEach(function(flag) {
+            flag.addEventListener('click', function() {
+                var selectedState = this.getAttribute('data-state');
+                // Update the State Selection in Vega-Lite spec
+                vegaEmbed('#dot_range', {
+                    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+                    "width": 350,
+                    "height": 350,
+                    "data": {
+                        "url": "https://raw.githubusercontent.com/SZao/FIT3179/refs/heads/master/data/Monthly%20domestic%20overnight%20travel.csv"
+                    },
+                    "params": [{
+                        "name": "State_selection",
+                        "value": selectedState
+                    }],
+                    "transform": [{
+                            "filter": {
+                                "field": "Month",
+                                "oneOf": [
+                                    "January", "February", "March", "April", "May",
+                                    "June", "July", "August", "September", "October",
+                                    "November", "December"
+                                ]
+                            }
+                        },
+                        {
+                            "filter": {
+                                "field": "Year",
+                                "oneOf": [2022, 2023]
+                            }
+                        },
+                        {
+                            "filter": "datum.State == State_selection"
+                        }
+                    ],
+                    "encoding": {
+                        "x": {
+                            "field": "Intrastate",
+                            "type": "quantitative",
+                            "title": "Intrastate"
+                        },
+                        "y": {
+                            "field": "Month",
+                            "type": "ordinal",
+                            "title": "Month",
+                            "axis": {
+                                "offset": 5,
+                                "ticks": false,
+                                "minExtent": 70,
+                                "domain": false
+                            },
+                            "sort": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] 
+
+                        }
+                    },
+                    "layer": [{
+                            "mark": "line",
+                            "encoding": {
+                                "detail": {
+                                    "field": "Month",
+                                    "type": "ordinal"
+                                },
+                                "color": {
+                                    "value": "#db646f"
+                                },
+                                "tooltip": [{
+                                        "field": "Month",
+                                        "title": "Month"
+                                    },
+                                    {
+                                        "field": "Year",
+                                        "title": "Year"
+                                    },
+                                    {
+                                        "field": "Intrastate",
+                                        "title": "Number of Tourist"
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "mark": {
+                                "type": "point",
+                                "filled": true
+                            },
+                            "encoding": {
+                                "color": {
+                                    "field": "Year",
+                                    "type": "ordinal",
+                                    "scale": {
+                                        "domain": [2022, 2023],
+                                        "range": ["#e6959c", "#911a24"]
+                                    },
+                                    "title": "Year"
+                                },
+                                "size": {
+                                    "value": 100
+                                },
+                                "opacity": {
+                                    "value": 1
+                                },
+                                "tooltip": [{
+                                        "field": "Month",
+                                        "title": "Month"
+                                    },
+                                    {
+                                        "field": "Year",
+                                        "title": "Year"
+                                    },
+                                    {"field": "State", "title": "State"},
+                                    {
+                                        "field": "Intrastate",
+                                        "title": "Number of Tourists",
+                                        "format": ",.0f"
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }).catch(console.error);
+            });
+        });
+
+
+      
+    
+        vegaEmbed('#bubble_chart', bubbleChart).catch(console.error);
+        vegaEmbed("#diverging_bar", divergingBar).catch(console.error);
+        vegaEmbed("#multi_graph", multiGraph).catch(console.error);
+
+
+
+    </script>
+
+</body>
+
+</html>

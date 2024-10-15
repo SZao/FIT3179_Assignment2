@@ -1,0 +1,107 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v5.json",
+  "width": 800,
+  "height": 500,
+  "padding": {"left": 5, "right": 5, "top": 20, "bottom": 0},
+  "autosize": "none",
+  "signals": [
+    {"name": "cx", "update": "width / 2"},
+    {"name": "cy", "update": "height / 2"},
+    {
+      "name": "gravityX",
+      "value": 0.2,
+      "bind": {"input": "range", "min": 0, "max": 1}
+    },
+    {
+      "name": "gravityY",
+      "value": 0.1,
+      "bind": {"input": "range", "min": 0, "max": 1}
+    }
+  ],
+  "data": [
+    {
+      "name": "accommodations",
+      "values": [
+        {"Type of Accommodation": "Hotel", "Quantity": 41799},
+        {"Type of Accommodation": "Guest house", "Quantity": 287},
+        {"Type of Accommodation": "Rented house", "Quantity": 104025},
+        {"Type of Accommodation": "Caravan park", "Quantity": 2434},
+        {"Type of Accommodation": "Backpacker Hostel", "Quantity": 11797},
+        {"Type of Accommodation": "Other commercial accommodation", "Quantity": 5684},
+        {"Type of Accommodation": "Own property", "Quantity": 2624},
+        {"Type of Accommodation": "Friends property", "Quantity": 89255},
+        {"Type of Accommodation": "Camping", "Quantity": 1200},
+        {"Type of Accommodation": "Other Private Accommodation", "Quantity": 9246},
+        {"Type of Accommodation": "Other Accommodation", "Quantity": 9817}
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "size",
+      "domain": {"data": "accommodations", "field": "Quantity"},
+      "range": [50, 800]
+    },
+    {
+      "name": "color",
+      "type": "linear",
+      "domain": {"data": "accommodations", "field": "Quantity"},
+      "range": ["#ffb6c1", "#ff007f"],  
+      "nice": true
+    }
+  ],
+  "marks": [
+    {
+      "name": "nodes",
+      "type": "symbol",
+      "from": {"data": "accommodations"},
+      "encode": {
+        "enter": {
+          "fill": {"scale": "color", "field": "Quantity"},
+          "xfocus": {"signal": "cx"},
+          "yfocus": {"signal": "cy"}
+        },
+        "update": {
+          "size": {"signal": "100 * datum.Quantity", "scale": "size"},
+          "stroke": {"value": "white"},
+          "strokeWidth": {"value": 1},
+          "tooltip": {
+            "signal": "datum['Type of Accommodation'] + ': ' + format(datum.Quantity / 1000, '.1f') + 'K units'"
+          }
+        }
+      },
+      "transform": [
+        {
+          "type": "force",
+          "iterations": 100,
+          "static": false,
+          "forces": [
+            {
+              "force": "collide",
+              "iterations": 2,
+              "radius": {"expr": "sqrt(datum.size) / 2"}
+            },
+            {"force": "center", "x": {"signal": "cx"}, "y": {"signal": "cy"}},
+            {"force": "x", "x": "xfocus", "strength": {"signal": "gravityX"}},
+            {"force": "y", "y": "yfocus", "strength": {"signal": "gravityY"}}
+          ]
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "from": {"data": "nodes"},
+      "encode": {
+        "enter": {
+          "align": {"value": "center"},
+          "baseline": {"value": "middle"},
+          "fontSize": {"value": 15},
+          "fontWeight": {"value": "bold"},
+          "fill": {"value": "black"},
+          "text": {"field": "datum['Type of Accommodation']"}
+        },
+        "update": {"x": {"field": "x"}, "y": {"field": "y"}}
+      }
+    }
+  ]
+}

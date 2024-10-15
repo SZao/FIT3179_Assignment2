@@ -1,0 +1,433 @@
+State/Territory,Trips,Spending,Month,Year
+Sydney,644,632,January,2022
+Regional NSW,"2,631","2,158",January,2022
+NSW,"3,169","2,790",January,2022
+Melbourne,465,443,January,2022
+Regional VIC,"1,975","1,293",January,2022
+VIC,"2,393","1,736",January,2022
+Brisbane & Gold Coast,875,884,January,2022
+Regional QLD,"1,227","1,259",January,2022
+QLD,"1,979","2,144",January,2022
+Adelaide,174,145,January,2022
+Regional SA,472,331,January,2022
+SA,602,476,January,2022
+Destination Perth,264,185,January,2022
+Regional WA,686,586,January,2022
+WA,928,771,January,2022
+TAS,274,299,January,2022
+NT,np,np,January,2022
+ACT,199,133,January,2022
+Sydney,833,910,January,2023
+Regional NSW,"2,853","2,614",January,2023
+NSW,"3,554","3,524",January,2023
+Melbourne,806,"1,101",January,2023
+Regional VIC,"2,303","1,546",January,2023
+VIC,"3,011","2,647",January,2023
+Brisbane & Gold Coast,"1,005","1,517",January,2023
+Regional QLD,"1,374","1,709",January,2023
+QLD,"2,254","3,227",January,2023
+Adelaide,290,280,January,2023
+Regional SA,477,414,January,2023
+SA,735,694,January,2023
+Destination Perth,442,434,January,2023
+Regional WA,789,718,January,2023
+WA,"1,198","1,152",January,2023
+TAS,315,426,January,2023
+NT,np,np,January,2023
+ACT,256,169,January,2023
+Sydney,638,528,February,2022
+Regional NSW,"1,817","1,181",February,2022
+NSW,"2,420","1,709",February,2022
+Melbourne,437,356,February,2022
+Regional VIC,"1,413",658,February,2022
+VIC,"1,830","1,014",February,2022
+Brisbane & Gold Coast,623,568,February,2022
+Regional QLD,924,711,February,2022
+QLD,"1,507","1,279",February,2022
+Adelaide,129,127,February,2022
+Regional SA,320,172,February,2022
+SA,433,299,February,2022
+Destination Perth,175,94,February,2022
+Regional WA,390,290,February,2022
+WA,558,384,February,2022
+TAS,292,338,February,2022
+NT,np,np,February,2022
+ACT,169,102,February,2022
+Sydney,708,789,February,2023
+Regional NSW,"1,958","1,188",February,2023
+NSW,"2,601","1,977",February,2023
+Melbourne,696,778,February,2023
+Regional VIC,"1,267",703,February,2023
+VIC,"1,940","1,481",February,2023
+Brisbane & Gold Coast,859,794,February,2023
+Regional QLD,925,860,February,2023
+QLD,"1,729","1,654",February,2023
+Adelaide,160,136,February,2023
+Regional SA,372,263,February,2023
+SA,495,399,February,2023
+Destination Perth,328,358,February,2023
+Regional WA,479,394,February,2023
+WA,785,753,February,2023
+TAS,286,439,February,2023
+NT,np,np,February,2023
+ACT,202,173,February,2023
+Sydney,835,629,March,2022
+Regional NSW,"1,855","1,363",March,2022
+NSW,"2,621","1,992",March,2022
+Melbourne,689,727,March,2022
+Regional VIC,"1,501",795,March,2022
+VIC,"2,111","1,522",March,2022
+Brisbane & Gold Coast,870,802,March,2022
+Regional QLD,"1,118","1,014",March,2022
+QLD,"1,946","1,816",March,2022
+Adelaide,250,242,March,2022
+Regional SA,336,223,March,2022
+SA,549,464,March,2022
+Destination Perth,314,272,March,2022
+Regional WA,487,267,March,2022
+WA,766,539,March,2022
+TAS,254,231,March,2022
+NT,np,np,March,2022
+ACT,201,121,March,2022
+Sydney,922,856,March,2023
+Regional NSW,"2,133","1,521",March,2023
+NSW,"2,989","2,377",March,2023
+Melbourne,953,"1,061",March,2023
+Regional VIC,"1,885","1,041",March,2023
+VIC,"2,759","2,101",March,2023
+Brisbane & Gold Coast,854,956,March,2023
+Regional QLD,"1,018",994,March,2023
+QLD,"1,823","1,949",March,2023
+Adelaide,275,361,March,2023
+Regional SA,474,267,March,2023
+SA,724,627,March,2023
+Destination Perth,387,477,March,2023
+Regional WA,546,377,March,2023
+WA,884,854,March,2023
+TAS,214,309,March,2023
+NT,np,np,March,2023
+ACT,266,192,March,2023
+Sydney,"1,024",905,April,2022
+Regional NSW,"2,668","2,032",April,2022
+NSW,"3,606","2,937",April,2022
+Melbourne,812,911,April,2022
+Regional VIC,"1,890","1,056",April,2022
+VIC,"2,633","1,967",April,2022
+Brisbane & Gold Coast,"1,011","1,017",April,2022
+Regional QLD,"1,530","1,723",April,2022
+QLD,"2,453","2,740",April,2022
+Adelaide,279,280,April,2022
+Regional SA,431,282,April,2022
+SA,679,562,April,2022
+Destination Perth,341,377,April,2022
+Regional WA,633,535,April,2022
+WA,939,912,April,2022
+TAS,362,500,April,2022
+NT,103,171,April,2022
+ACT,340,282,April,2022
+Sydney,"1,006",872,April,2023
+Regional NSW,"2,574","1,800",April,2023
+NSW,"3,525","2,673",April,2023
+Melbourne,928,"1,083",April,2023
+Regional VIC,"2,057","1,105",April,2023
+VIC,"2,899","2,188",April,2023
+Brisbane & Gold Coast,982,"1,212",April,2023
+Regional QLD,"1,217","1,246",April,2023
+QLD,"2,129","2,458",April,2023
+Adelaide,255,369,April,2023
+Regional SA,460,303,April,2023
+SA,697,672,April,2023
+Destination Perth,457,527,April,2023
+Regional WA,666,635,April,2023
+WA,"1,096","1,162",April,2023
+TAS,237,328,April,2023
+NT,np,np,April,2023
+ACT,245,184,April,2023
+Sydney,898,765,May,2022
+Regional NSW,"2,055","1,253",May,2022
+NSW,"2,896","2,018",May,2022
+Melbourne,831,809,May,2022
+Regional VIC,"1,624",847,May,2022
+VIC,"2,378","1,656",May,2022
+Brisbane & Gold Coast,908,914,May,2022
+Regional QLD,"1,308","1,070",May,2022
+QLD,"2,106","1,983",May,2022
+Adelaide,269,270,May,2022
+Regional SA,391,219,May,2022
+SA,618,489,May,2022
+Destination Perth,406,423,May,2022
+Regional WA,457,322,May,2022
+WA,820,745,May,2022
+TAS,267,283,May,2022
+NT,218,378,May,2022
+ACT,250,179,May,2022
+Sydney,936,994,May,2023
+Regional NSW,"1,905","1,278",May,2023
+NSW,"2,778","2,272",May,2023
+Melbourne,935,"1,008",May,2023
+Regional VIC,"1,313",706,May,2023
+VIC,"2,185","1,714",May,2023
+Brisbane & Gold Coast,895,946,May,2023
+Regional QLD,"1,165","1,093",May,2023
+QLD,"1,990","2,038",May,2023
+Adelaide,262,281,May,2023
+Regional SA,343,256,May,2023
+SA,577,536,May,2023
+Destination Perth,311,315,May,2023
+Regional WA,498,519,May,2023
+WA,773,834,May,2023
+TAS,196,244,May,2023
+NT,164,178,May,2023
+ACT,299,231,May,2023
+Sydney,850,728,June,2022
+Regional NSW,"1,761","1,120",June,2022
+NSW,"2,533","1,848",June,2022
+Melbourne,662,781,June,2022
+Regional VIC,"1,314",676,June,2022
+VIC,"1,945","1,457",June,2022
+Brisbane & Gold Coast,900,955,June,2022
+Regional QLD,"1,341","1,230",June,2022
+QLD,"2,205","2,185",June,2022
+Adelaide,235,250,June,2022
+Regional SA,329,177,June,2022
+SA,545,428,June,2022
+Destination Perth,331,426,June,2022
+Regional WA,512,376,June,2022
+WA,801,802,June,2022
+TAS,243,287,June,2022
+NT,162,263,June,2022
+ACT,290,209,June,2022
+Sydney,834,912,June,2023
+Regional NSW,"2,080","1,297",June,2023
+NSW,"2,863","2,210",June,2023
+Melbourne,853,826,June,2023
+Regional VIC,"1,325",609,June,2023
+VIC,"2,147","1,435",June,2023
+Brisbane & Gold Coast,810,792,June,2023
+Regional QLD,"1,195","1,136",June,2023
+QLD,"1,949","1,928",June,2023
+Adelaide,166,195,June,2023
+Regional SA,359,248,June,2023
+SA,514,443,June,2023
+Destination Perth,317,330,June,2023
+Regional WA,444,452,June,2023
+WA,735,783,June,2023
+TAS,298,224,June,2023
+NT,np,np,June,2023
+ACT,255,231,June,2023
+Sydney,898,"1,012",July,2022
+Regional NSW,"2,334","1,802",July,2022
+NSW,"3,151","2,814",July,2022
+Melbourne,728,915,July,2022
+Regional VIC,"1,411",958,July,2022
+VIC,"2,087","1,873",July,2022
+Brisbane & Gold Coast,922,"1,098",July,2022
+Regional QLD,"1,525","1,890",July,2022
+QLD,"2,393","2,988",July,2022
+Adelaide,287,239,July,2022
+Regional SA,389,273,July,2022
+SA,649,511,July,2022
+Destination Perth,367,374,July,2022
+Regional WA,558,452,July,2022
+WA,877,826,July,2022
+TAS,181,186,July,2022
+NT,208,434,July,2022
+ACT,285,260,July,2022
+Sydney,947,987,July,2023
+Regional NSW,"2,385","1,791",July,2023
+NSW,"3,241","2,778",July,2023
+Melbourne,847,"1,059",July,2023
+Regional VIC,"1,496",862,July,2023
+VIC,"2,284","1,921",July,2023
+Brisbane & Gold Coast,"1,084","1,201",July,2023
+Regional QLD,"1,491","1,564",July,2023
+QLD,"2,457","2,765",July,2023
+Adelaide,288,408,July,2023
+Regional SA,383,208,July,2023
+SA,642,617,July,2023
+Destination Perth,350,427,July,2023
+Regional WA,576,550,July,2023
+WA,893,977,July,2023
+TAS,254,255,July,2023
+NT,176,430,July,2023
+ACT,320,244,July,2023
+Sydney,802,674,August,2022
+Regional NSW,"1,828","1,458",August,2022
+NSW,"2,560","2,132",August,2022
+Melbourne,740,734,August,2022
+Regional VIC,"1,224",775,August,2022
+VIC,"1,890","1,509",August,2022
+Brisbane & Gold Coast,"1,029",929,August,2022
+Regional QLD,"1,356","1,618",August,2022
+QLD,"2,295","2,547",August,2022
+Adelaide,280,287,August,2022
+Regional SA,314,212,August,2022
+SA,569,498,August,2022
+Destination Perth,376,342,August,2022
+Regional WA,534,586,August,2022
+WA,859,927,August,2022
+TAS,158,151,August,2022
+NT,193,338,August,2022
+ACT,260,193,August,2022
+Sydney,848,938,August,2023
+Regional NSW,"2,026","1,530",August,2023
+NSW,"2,766","2,468",August,2023
+Melbourne,856,"1,096",August,2023
+Regional VIC,"1,262",780,August,2023
+VIC,"2,067","1,877",August,2023
+Brisbane & Gold Coast,"1,042","1,225",August,2023
+Regional QLD,"1,363","1,766",August,2023
+QLD,"2,328","2,991",August,2023
+Adelaide,309,313,August,2023
+Regional SA,329,182,August,2023
+SA,607,495,August,2023
+Destination Perth,365,379,August,2023
+Regional WA,642,764,August,2023
+WA,978,"1,143",August,2023
+TAS,np,np,August,2023
+NT,np,np,August,2023
+ACT,317,235,August,2023
+Sydney,933,953,September,2022
+Regional NSW,"2,285","1,679",September,2022
+NSW,"3,111","2,632",September,2022
+Melbourne,827,"1,117",September,2022
+Regional VIC,"1,601","1,002",September,2022
+VIC,"2,379","2,119",September,2022
+Brisbane & Gold Coast,960,"1,053",September,2022
+Regional QLD,"1,383","1,660",September,2022
+QLD,"2,252","2,713",September,2022
+Adelaide,231,332,September,2022
+Regional SA,393,261,September,2022
+SA,613,593,September,2022
+Destination Perth,415,470,September,2022
+Regional WA,708,605,September,2022
+WA,"1,079","1,075",September,2022
+TAS,171,175,September,2022
+NT,np,np,September,2022
+ACT,286,207,September,2022
+Sydney,804,785,September,2023
+Regional NSW,"2,038","1,245",September,2023
+NSW,"2,775","2,030",September,2023
+Melbourne,846,819,September,2023
+Regional VIC,"1,357",946,September,2023
+VIC,"2,154","1,765",September,2023
+Brisbane & Gold Coast,808,"1,094",September,2023
+Regional QLD,"1,350","1,644",September,2023
+QLD,"2,099","2,738",September,2023
+Adelaide,247,304,September,2023
+Regional SA,392,259,September,2023
+SA,601,563,September,2023
+Destination Perth,278,359,September,2023
+Regional WA,629,553,September,2023
+WA,890,912,September,2023
+TAS,267,229,September,2023
+NT,np,np,September,2023
+ACT,263,231,September,2023
+Sydney,995,"1,123",October,2022
+Regional NSW,"2,362","1,823",October,2022
+NSW,"3,271","2,946",October,2022
+Melbourne,887,"1,223",October,2022
+Regional VIC,"1,330",742,October,2022
+VIC,"2,187","1,965",October,2022
+Brisbane & Gold Coast,"1,024","1,255",October,2022
+Regional QLD,"1,498","1,875",October,2022
+QLD,"2,473","3,130",October,2022
+Adelaide,315,401,October,2022
+Regional SA,452,272,October,2022
+SA,738,673,October,2022
+Destination Perth,545,616,October,2022
+Regional WA,630,655,October,2022
+WA,"1,114","1,271",October,2022
+TAS,327,481,October,2022
+NT,166,378,October,2022
+ACT,300,248,October,2022
+Sydney,"1,117","1,211",October,2023
+Regional NSW,"2,458","1,916",October,2023
+NSW,"3,503","3,127",October,2023
+Melbourne,876,"1,000",October,2023
+Regional VIC,"1,590",915,October,2023
+VIC,"2,416","1,915",October,2023
+Brisbane & Gold Coast,942,"1,027",October,2023
+Regional QLD,"1,285","1,247",October,2023
+QLD,"2,166","2,274",October,2023
+Adelaide,231,278,October,2023
+Regional SA,398,254,October,2023
+SA,591,531,October,2023
+Destination Perth,379,578,October,2023
+Regional WA,595,556,October,2023
+WA,937,"1,134",October,2023
+TAS,198,344,October,2023
+NT,np,np,October,2023
+ACT,313,257,October,2023
+Sydney,950,"1,095",November,2022
+Regional NSW,"1,996","1,396",November,2022
+NSW,"2,892","2,492",November,2022
+Melbourne,742,963,November,2022
+Regional VIC,"1,327",692,November,2022
+VIC,"1,987","1,655",November,2022
+Brisbane & Gold Coast,962,"1,114",November,2022
+Regional QLD,"1,050","1,021",November,2022
+QLD,"1,961","2,134",November,2022
+Adelaide,267,365,November,2022
+Regional SA,310,205,November,2022
+SA,554,570,November,2022
+Destination Perth,353,477,November,2022
+Regional WA,494,448,November,2022
+WA,806,925,November,2022
+TAS,228,299,November,2022
+NT,100,203,November,2022
+ACT,246,179,November,2022
+Sydney,976,"1,101",November,2023
+Regional NSW,"2,151","1,336",November,2023
+NSW,"3,030","2,437",November,2023
+Melbourne,811,869,November,2023
+Regional VIC,"1,490",749,November,2023
+VIC,"2,264","1,618",November,2023
+Brisbane & Gold Coast,953,"1,000",November,2023
+Regional QLD,"1,056","1,081",November,2023
+QLD,"1,928","2,081",November,2023
+Adelaide,283,321,November,2023
+Regional SA,317,226,November,2023
+SA,579,547,November,2023
+Destination Perth,423,622,November,2023
+Regional WA,539,594,November,2023
+WA,927,"1,216",November,2023
+TAS,306,339,November,2023
+NT,np,np,November,2023
+ACT,339,304,November,2023
+Sydney,910,902,December,2022
+Regional NSW,"2,054","1,276",December,2022
+NSW,"2,889","2,178",December,2022
+Melbourne,735,895,December,2022
+Regional VIC,"1,677",903,December,2022
+VIC,"2,349","1,797",December,2022
+Brisbane & Gold Coast,934,937,December,2022
+Regional QLD,"1,125","1,150",December,2022
+QLD,"2,022","2,088",December,2022
+Adelaide,210,272,December,2022
+Regional SA,378,210,December,2022
+SA,561,482,December,2022
+Destination Perth,458,469,December,2022
+Regional WA,558,440,December,2022
+WA,977,909,December,2022
+TAS,242,240,December,2022
+NT,np,np,December,2022
+ACT,207,153,December,2022
+Sydney,935,"1,061",December,2023
+Regional NSW,"2,274","1,738",December,2023
+NSW,"3,127","2,798",December,2023
+Melbourne,850,"1,332",December,2023
+Regional VIC,"1,548",848,December,2023
+VIC,"2,332","2,180",December,2023
+Brisbane & Gold Coast,947,"1,009",December,2023
+Regional QLD,"1,243","1,183",December,2023
+QLD,"2,139","2,192",December,2023
+Adelaide,265,278,December,2023
+Regional SA,388,177,December,2023
+SA,636,455,December,2023
+Destination Perth,422,657,December,2023
+Regional WA,573,521,December,2023
+WA,978,"1,178",December,2023
+TAS,326,421,December,2023
+NT,np,np,December,2023
+ACT,224,156,December,2023

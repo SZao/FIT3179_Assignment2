@@ -1,0 +1,70 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "description": "A diverging bar chart comparing the number of businesses in 2016 and 2021 across various industries.",
+    "width": 450,
+    "height":300,
+    "data": {
+      "values": [
+        {"industry": "Accommodation", "year": 2016, "business_count": -12945},
+        {"industry": "Accommodation", "year": 2021, "business_count": 13303},
+        {"industry": "Cafes, restaurants and takeaways", "year": 2016, "business_count": -77959},
+        {"industry": "Cafes, restaurants and takeaways", "year": 2021, "business_count": 91533},
+        {"industry": "Taxi transport and Other road transport", "year": 2016, "business_count": -19360},
+        {"industry": "Taxi transport and Other road transport", "year": 2021, "business_count": 34423},
+        {"industry": "Air and water transport", "year": 2016, "business_count": -5142},
+        {"industry": "Air and water transport", "year": 2021, "business_count": 5377},
+        {"industry": "Motor vehicle hiring/Rail transport", "year": 2016, "business_count": -1786},
+        {"industry": "Motor vehicle hiring/Rail transport", "year": 2021, "business_count": 2401},
+        {"industry": "Travel agency/tour services", "year": 2016, "business_count": -6077},
+        {"industry": "Travel agency/tour services", "year": 2021, "business_count": 8872},
+        {"industry": "Arts and recreation", "year": 2016, "business_count": -26740},
+        {"industry": "Arts and recreation", "year": 2021, "business_count": 33496},
+        {"industry": "Retail trade", "year": 2016, "business_count": -132212},
+        {"industry": "Retail trade", "year": 2021, "business_count": 145106}
+      ]
+    },
+    "transform": [
+      {
+        "calculate": "abs(datum.business_count)",
+        "as": "abs_business_count"
+      }
+    ],
+    "mark": "bar",
+    "encoding": {
+      "y": {
+        "field": "industry",
+        "type": "nominal",
+        "axis": {
+          "labelAngle": 0,
+          "title": ""
+        }
+      },
+      "x": {
+        "field": "business_count",
+        "type": "quantitative",
+        "axis": {
+          "title": "Number of Businesses",
+          "labelExpr": "datum.value < 0 ? -datum.value : datum.value"
+        }
+      },
+      "color": {
+        "field": "year",
+        "type": "ordinal",
+        "scale": {
+          "domain": [2016, 2021],
+          "range": ["#FF9900", "#FF3366"]
+        },
+        "title": "Year"
+      },
+      "tooltip": [
+        {"field": "year", "type": "nominal", "title": "Year"},
+        {"field": "industry", "type": "nominal", "title": "Industry"},
+        {
+          "field": "abs_business_count",
+          "type": "quantitative",
+          "title": "Number of Businesses"
+        }
+      ]
+    }
+  }
+  
