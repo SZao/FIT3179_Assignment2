@@ -35,7 +35,8 @@
           {
             "field": "Tourism ($b)",
             "type": "quantitative",
-            "title": "Tourism GDP Value ($b)"
+            "title": "Tourism GDP Value ($b)",
+            "format": "$"
           }
         ]
       }
