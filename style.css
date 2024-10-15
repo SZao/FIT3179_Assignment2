@@ -12,7 +12,7 @@ h1 {
     margin-bottom: 20px; /* Space below the title */
     font-size: 110px ;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-image: url(../image/background1.jpg);
+    background-image: url(/image/background1.jpg);
     padding: 100px 0;
     background-size: cover;
     background-position: center; /* Center the image */
